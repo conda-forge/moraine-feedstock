@@ -23,6 +23,19 @@ requirements:
     - numpy
     - scipy
     - matplotlib-base
+    - numba
+    - dask
+    - zarr
+    - pyproj
+    - tqdm
+    - toml
+    - numexpr
+    - numcodecs
+    - pandas
+    - holoviews
+    - datashader
+    - colorcet
+    - spatialpandas
 
 test:
   imports:
