@@ -1,10 +1,6 @@
 {% set name = "moraine" %}
-<<<<<<< 0.8.3_h03ac28
 {% set version = "0.8.3" %}
-=======
-{% set version = "0.8.1" %}
 {% set python_min = "3.10" %}
->>>>>>> main
 
 package:
   name: {{ name|lower }}
@@ -12,11 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/moraine-{{ version }}.tar.gz
-<<<<<<< 0.8.3_h03ac28
   sha256: fce77d495b9045d93afe011cbcca0d20b83b79062000fc573aa03ad9a3380aac
-=======
-  sha256: be8956eb9fd7b1bed51141aaaa4284c3d5f991dfaede162bc4f1dd35c2747bcb
->>>>>>> main
 
 build:
   noarch: python
