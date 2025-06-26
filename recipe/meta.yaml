@@ -39,6 +39,7 @@ requirements:
     - datashader
     - colorcet
     - spatialpandas
+    - onnxruntime
 
 test:
   imports:
