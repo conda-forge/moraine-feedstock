@@ -1,5 +1,5 @@
 {% set name = "moraine" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/moraine-{{ version }}.tar.gz
-  sha256: be8956eb9fd7b1bed51141aaaa4284c3d5f991dfaede162bc4f1dd35c2747bcb
+  sha256: fce77d495b9045d93afe011cbcca0d20b83b79062000fc573aa03ad9a3380aac
 
 build:
   noarch: python
@@ -39,6 +39,7 @@ requirements:
     - datashader
     - colorcet
     - spatialpandas
+    - onnxruntime
 
 test:
   imports:
