@@ -1,6 +1,6 @@
 {% set name = "moraine" %}
 {% set version = "0.8.5" %}
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -36,9 +36,8 @@ requirements:
     - numcodecs
     - pandas
     - holoviews
-    - datashader
     - colorcet
-    - spatialpandas
+    - fpsample
     - onnxruntime
 
 test:
