@@ -12,8 +12,11 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
+  script: |
+    {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+    # Force-install specific PyPI-only dependencies
+    {{ PYTHON }} -m pip install --no-cache-dir onnxruntime fpsample ortools
 
 requirements:
   host:
@@ -33,13 +36,10 @@ requirements:
     - tqdm
     - toml
     - numexpr
-    - numcodecs
     - pandas
     - holoviews
-    - datashader
     - colorcet
-    - spatialpandas
-    - onnxruntime
+    - pip
 
 test:
   imports:
