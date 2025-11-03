@@ -16,7 +16,6 @@ build:
   script: |
     {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
     # Force-install specific PyPI-only dependencies
-    {{ PYTHON }} -m pip install --no-cache-dir fpsample ortools
 
 requirements:
   host:
@@ -40,7 +39,6 @@ requirements:
     - holoviews
     - colorcet
     - onnxruntime
-    - pip
 
 test:
   imports:
